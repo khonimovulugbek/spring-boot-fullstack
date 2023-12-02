@@ -23,6 +23,7 @@ public class Application {
     CommandLineRunner runner(CustomerRepository customerRepository) {
         return args -> {
             Faker faker = new Faker();
+
             Random random = new Random();
             Name name = faker.name();
             String firstName = name.firstName();
